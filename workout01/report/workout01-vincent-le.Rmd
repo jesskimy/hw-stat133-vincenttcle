@@ -1,0 +1,48 @@
+---
+title: "Workout 1: Golden State and its Superteam of Warriors"
+author: "Vincent Le"
+output: github_document
+---
+
+```{r out.width= "70%", echo = FALSE, fig.align='center'}
+knitr::include_graphics("../images/steph-curry.png")
+```
+
+```{r echo=FALSE, results='hide', message=FALSE}
+library(dplyr)
+#making data tables
+#total shots
+total_table <- read.csv("../data/shots-data-summary.csv")
+total_summary <- arrange(summarise(
+  group_by(total_table, name),
+  total_shots = sum(shot_type == "2PT Field Goal" | shot_type == "3PT Field Goal"),
+  made_shots = sum(shot_made_flag == "shot_yes"),
+  percent_made = made_shots/total_shots
+),desc(percent_made))
+
+#two pointers
+two_point_table <- filter(total_table, shot_type == "2PT Field Goal")
+two_point_summary <- arrange(summarise(
+  group_by(two_point_table, name),
+  total_two_point_shots = sum(shot_type == "2PT Field Goal"),
+  made_shots = sum(shot_made_flag == "shot_yes"),
+  percent_made = made_shots/total_two_point_shots
+),desc(percent_made))
+
+#three pointers
+three_point_table <- filter(total_table, shot_type == "3PT Field Goal")
+three_point_summary <- arrange(summarise(
+  group_by(three_point_table, name),
+  total_three_point_shots = sum(shot_type == "3PT Field Goal"),
+  made_shots = sum(shot_made_flag == "shot_yes"),
+  percent_made = made_shots/total_three_point_shots
+),desc(percent_made))
+
+```
+
+###Intro
+For the Golden State Warriors, 2016 was an amazing year. Referred to by many as a "superteam", they broke the playoff NBA record with 16 wins and 1 loss. That year, the Warriors won the NBA Championship Finals for the fifth time - defeating the mighty Cleveland Cavaliers by a margin of 4 games to 1. This series of finals was historic for another reason, however, as this was the third year in a row that the two teams had faced off for the same trophy. 2016 was a historic year for Steve Kerr and his Golden State Warriors for a multitude of other reasons as well. The achievements of this incredible team include winning both the Pacific Division and Western Conference Championships three seasons in a row, as well as multiple records being broken by Stephen Curry, and awards won by Draymond Green, and Kevin Durant. The incredible success of this unique team can be credited to many factors, including the coaching and mentality of the players. However, one aspect that was irrefutably crucial to the Golden State Warriors sweeping the league was the individual prowess of each of the players – in particular, Andre Iguodala, Draymond Green, Kevin Durant, Klay Thompson, and Stephen Curry. These players excelled across the board in all components of the game, such as ballhandling and defense, but it was their offensive plays  and shooting percentages that really made them stand out from the other teams, and propelled them to the top of the charts. This report will analyze the shooting data of each of the five key players, and provide graphics that display the distribution of shot locations on the court. We will tally up the total number of shots taken by each player, look at the number of two or three pointers taken by each player, and calculate what proportion of taken shots were made, or not made. Moreover, by looking at the shot location charts, we can potentially pinpoint which areas on the court each player prefers, and if there is a skew to which type of shot each player prefers (two pointers or three pointers).
+In doing this, we hope to better understand how the Golden State Warriors were able to excel during their historic 2016 season.
+
+###Data
+The data analyzed came from the data folder from the Stat 133 Homework Github repository. The original data came as CSV files, which stands for Comma Separated Values. Each player had his own CSV file, which included raw data for the game date, season, period, what type of shot it was, the opposing team being played, and the coordinates on the court where the shot was taken. Any extra clarifications or descriptions for column titles can be found in the data dictionary titled `data-dictionary.md` and is found in the `data/` folder of the project files. The data was modified slightly – a column `name`  was added with the name of the player, a column `minute` was added to specify the minute in which the shot was taken, and the options for `shot_made_flag` were altered to either `shot_yes` or `shot_no` to better describe whether or not the shot was made. Ultimately, the five CSV files were combined into one large CSV file with data from each player, titled `total_table`. It is with this data table that all the following analysis was done.
