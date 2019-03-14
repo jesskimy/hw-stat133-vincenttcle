@@ -1,0 +1,32 @@
+             name                      team_name       game_date        season    
+ Andre Iguodala: 371   Golden State Warriors:4334   10/28/16:  76   Min.   :2016  
+ Draymond Green: 578                                12/13/16:  75   1st Qu.:2016  
+ Kevin Durant  : 915                                11/7/16 :  74   Median :2016  
+ Klay Thompson :1220                                1/20/17 :  73   Mean   :2016  
+ Stephen Curry :1250                                11/16/16:  72   3rd Qu.:2016  
+                                                    11/18/16:  72   Max.   :2016  
+                                                    (Other) :3892                 
+     period      minutes_remaining seconds_remaining  shot_made_flag              action_type  
+ Min.   :1.000   Min.   : 0.000    Min.   : 0.00     shot_no :2243   Jump Shot          :2051  
+ 1st Qu.:1.000   1st Qu.: 2.000    1st Qu.:13.00     shot_yes:2091   Pullup Jump shot   : 521  
+ Median :2.000   Median : 5.000    Median :29.00                     Layup Shot         : 215  
+ Mean   :2.351   Mean   : 5.412    Mean   :28.60                     Driving Layup Shot : 160  
+ 3rd Qu.:3.000   3rd Qu.: 8.000    3rd Qu.:43.75                     Step Back Jump shot: 133  
+ Max.   :4.000   Max.   :11.000    Max.   :59.00                     Running Layup Shot : 115  
+                                                                     (Other)            :1139  
+          shot_type    shot_distance                     opponent          x           
+ 2PT Field Goal:2402   Min.   : 0.00   Houston Rockets       : 271   Min.   :-248.000  
+ 3PT Field Goal:1932   1st Qu.: 2.25   Sacramento Kings      : 249   1st Qu.: -56.000  
+                       Median :19.00   Los Angeles Clippers  : 246   Median :   1.000  
+                       Mean   :15.58   Oklahoma City Thunder : 240   Mean   :   7.746  
+                       3rd Qu.:25.00   Portland Trail Blazers: 238   3rd Qu.:  95.500  
+                       Max.   :71.00   Memphis Grizzlies     : 225   Max.   : 246.000  
+                                       (Other)               :2865                     
+       y        
+ Min.   :-39.0  
+ 1st Qu.: 13.0  
+ Median : 95.0  
+ Mean   :109.4  
+ 3rd Qu.:198.0  
+ Max.   :717.0  
+                
