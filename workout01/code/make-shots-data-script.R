@@ -2,7 +2,7 @@
 # Title: Data Cleanup/Preparation
 # Description: This R script will contain all my data preparation and cleaning.
 # Input(s): The raw data will come from five data CSV files - one for each player.
-# Output(s): The output will be a single data frame with cleaned information from all five players (exported to data folder), and text files with summary outputs for each player (exported to output folder). 
+# Output(s): The output will be a single data frame with cleaned information from all five players (exported to data folder as shots-data.csv), and text files with summary outputs for each player (exported to output folder as shots-data-summary.txt). 
 ################
 
 #####Downloading the data from the Stat133 github folder
