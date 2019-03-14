@@ -118,3 +118,22 @@ knitr::include_graphics("../images/gsw-shot-charts.png")
 ```{r out.width= "70%", echo = FALSE, fig.align='center'}
 knitr::include_graphics("../images/gswteam.png")
 ```
+
+
+
+
+
+
+
+```{r echo = FALSE, comment = NA, results='hide'}
+#Raw data that was used to construct the tables is provided below.
+
+#Total points shot
+total_summary
+
+#Two pointers
+two_point_summary
+
+#Three pointers
+three_point_summary
+```
