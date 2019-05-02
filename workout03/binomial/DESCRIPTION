@@ -1,6 +1,6 @@
 Package: binomial
 Type: Package
-Title: Functions for binomial random variables
+Title: Functions for the binomial distributions
 Version: 0.1.0
 Author: Vincent Le
 Maintainer: Vincent Le <vincenttcle@berkeley.edu>
