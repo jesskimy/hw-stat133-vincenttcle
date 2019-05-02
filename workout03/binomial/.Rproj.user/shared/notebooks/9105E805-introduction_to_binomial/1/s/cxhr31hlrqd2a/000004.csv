@@ -1,7 +1,0 @@
-"0","bin_variable(trials = 10, prob = 0.3)
-"
-"1","""Binomial Variable"" 
-
-Parameters 
-- number of trials: 10 
-- prob of success : 0.3"

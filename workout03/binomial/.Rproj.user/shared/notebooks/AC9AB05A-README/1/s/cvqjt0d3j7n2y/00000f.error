@@ -1,1 +1,0 @@
-{"frames":[{"character_number":0,"end_character_number":0,"end_line_number":0,"file":"","func":"plot(bindis_plot)","line_number":0},{"character_number":0,"end_character_number":0,"end_line_number":0,"file":"","func":"plot.bindis(bindis_plot)","line_number":0}],"message":"Error in ggplot(df, aes(x = df$success, y = df$probability)) : \n  could not find function \"ggplot\"\n"}

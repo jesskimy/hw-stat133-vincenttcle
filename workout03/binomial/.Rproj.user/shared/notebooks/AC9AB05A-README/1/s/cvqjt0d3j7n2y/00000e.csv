@@ -1,6 +1,0 @@
-"0","#Plotting the distribution"
-"0","bindis_plot <- bin_distribution(trials =  10, prob = 0.5)"
-"0","plot(bindis_plot)"
-"2","Error in ggplot(df, aes(x = df$success, y = df$probability)) : 
-  could not find function ""ggplot""
-"
