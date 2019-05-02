@@ -259,7 +259,7 @@ binsum1
 #' @return this function returns a numeric value that represents the expected value, or mean of the binomial distribution
 #' @examples
 #' bin_mean(trials = 5, prob = 0.5)
-#' bin_meane(trials = 100, prob = 0.2)
+#' bin_mean(trials = 100, prob = 0.2)
 #' bin_mean(trials = 45, prob = 0.75)
 #' @export
 #'
