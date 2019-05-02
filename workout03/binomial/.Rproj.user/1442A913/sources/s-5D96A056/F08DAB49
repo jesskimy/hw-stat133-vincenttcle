@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1556675629208.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "F08DAB49",
+    "lastKnownWriteTime" : 1556687722,
+    "last_content_update" : 1556687722760,
+    "path" : "~/Google Drive/College Work/Year 3/Spring 2019/Stat 133/Homeworks/workout03/binomial/tests/testthat/test-main_functions.R",
+    "project_path" : "tests/testthat/test-main_functions.R",
+    "properties" : {
+        "cursorPosition" : "26,2",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 8,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
