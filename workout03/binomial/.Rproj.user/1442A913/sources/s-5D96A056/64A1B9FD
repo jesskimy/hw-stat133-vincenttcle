@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1556414294821.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "64A1B9FD",
+    "lastKnownWriteTime" : 1556598269,
+    "last_content_update" : 1556598269568,
+    "path" : "~/Google Drive/College Work/Year 3/Spring 2019/Stat 133/Homeworks/workout03/binomial/R/private_aux.R",
+    "project_path" : "R/private_aux.R",
+    "properties" : {
+        "cursorPosition" : "19,30",
+        "scrollLine" : "57",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
