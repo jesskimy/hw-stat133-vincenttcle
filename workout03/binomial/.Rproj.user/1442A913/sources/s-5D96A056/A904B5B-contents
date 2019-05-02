@@ -1,0 +1,6 @@
+######
+# Title: Test check_prob
+# Description: Includes the tests and expectations for private checker function check_prob
+######
+
+context("Check Probability")

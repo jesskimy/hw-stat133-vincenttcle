@@ -1,0 +1,22 @@
+"0","#Binomial random variable"
+"0","bin_variable(trials = 10, prob = 0.5)"
+"1","""Binomial Variable"" 
+
+Parameters 
+- number of trials: 10 
+- prob of success : 0.5"
+"0","#summary of the binomial random variable"
+"0","bin_summary <- bin_variable(trials = 10, prob = 0.5)"
+"0","summary(bin_summary)"
+"1","""Summary Binomial"" 
+
+Parameters 
+- number of trials: 10 
+- prob of success : 0.5 
+
+Measures 
+- mean    : 5 
+- variance: 2.5 
+- mode    : 5 
+- skewness: 0 
+- kurtosis: -0.2"
